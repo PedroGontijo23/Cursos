@@ -1,0 +1,108 @@
+/* Nessa configuração ao começo da página, tudo que eu por aqui será válida para TODAS as divs dá página */
+* {
+    /* serve para que possa usar a unidade de medida REM */
+    font-size: 67.5%; 
+    /* serve para melhor administrar os paddings de cada div */
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+
+/*
+    :root - isso aqui é uma propriedade do css que me permite declarar váriaveis de cores
+
+    Imagine que você fez um site todo com uma cor de branco especifica que ao fim do projeto percebeu e agora tem que mudar
+    se você colocou 'WHITE' em tudo, vai ter que mudar um por um. Mas, se colocou tudo com as váriaveis, basta mudar dentro de root
+    e então vai ser aplicado em todo lugar que você usou a váriavel.
+*/
+
+:root {
+    --background-color-basic: #fff;
+    --background-blue-milbr: rgba(28, 94, 138, 0.94);
+    --color-letter-black: black;
+}
+
+body {
+    width: 100%;
+    /* 
+        Medidas como vh e VW são proporções de tela inteira. Então quando você usa, ele vai dividir em 100 pedaços
+        a tela. E o número que colocar à esquerda, vai apontar o tamanho 
+    
+        VH se usa para altura (height) e VW se usa para largura (width). E tem que usar com cautela, porque é um
+        dos únicos parametros que não é afetado pela configuração da div pai. Mesmo que você tenha limitado o tamanho do pai
+        o filho se tiver em VH ou VW, vai desrepeitar essa regra. Por isso usamos só para coisas realmente grandes.
+
+        Body, Nav, Main...
+    */
+    height: 100vh;
+    
+    /* Ó o grid aparecendo para coisas grandes visualmente aqui ó  */
+    display: grid;
+
+    /* macete junto com o grid para centralizar elementos sem precisar de 20 coisas com config center */
+    place-items: center;
+}
+
+main {
+    /* exemplo de como usar uma váriavel */
+    background-color: var(--background-blue-milbr);
+
+    height: 400px;
+    width: 600px;
+    border-radius: 20px;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 1);
+    
+    /* Olha ele aqui de novo */
+    display: grid;
+    place-items: center;
+}
+
+/* 
+    UL é uma tag muito abrangente assim como as outras com nome. Então eu posso por um id nela e referenciar,
+    ou posso fazer assim, colocando o nome da div pai antes e depois o dela.
+
+    Na prática se tiver um outro UL no site em outro lugar não será afetado por essa regra, porque referenciei
+    que estou falando da UL que está dentro do main.
+
+    Funciona para qualquer tag. Header, Nav, Main, Section, Footer, etc. - Mas eu ainda gosto de usar ID's e divs
+    normais, por conta do javascript. Me agradeça depois por essa dica!
+*/
+
+main ul {
+    /* 
+        conforme te falei no aúdio, essa tag lista as coisas, mas vem com uma bolinha antes de cada item.
+        Então dessa forma a tira as bolinhas mas ao mesmo tempo consegue usar as propriedades de arrumação dela
+        conforme te falei no aúdio.
+    */
+    list-style: none;
+    height: 80%;
+    width: 90%;
+    display: flex;
+    /* serve para quebrar a linha caso precise */
+    align-items: center;
+    justify-self: center;
+    flex-wrap: wrap;
+}
+
+main ul li {
+    height: 200px;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+main ul li img {
+    /* olha uma variavel aqui de novo */
+    background-color: var(--background-color-basic);
+    max-width: 100%;
+    max-width: 80%;
+    min-width: 60%;
+    min-height: 50%;
+    padding: 1rem;
+    /* deixar em 50% vai fazer ficar redondo, útil para qualquer coisa */
+    border-radius: 50%;
+    object-fit: cover;
+}

@@ -1,0 +1,3 @@
+# Cursos
+
+Olá! Meu nome é Pedro e estou começando minha jornada no mundo da programação. Este diretório foi criado para organizar e armazenar os cursos que estou fazendo enquanto aprendo sobre desenvolvimento de software. Aqui você encontrará materiais, exercícios e projetos relacionados aos cursos que estou acompanhando. Como iniciante, estou explorando diferentes linguagens e ferramentas para adquirir conhecimento e experiência prática. Sinta-se à vontade para acompanhar meu progresso e conferir os conteúdos que estou estudando. Este espaço é dedicado ao meu aprendizado e evolução
