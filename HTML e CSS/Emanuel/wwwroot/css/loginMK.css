@@ -1,0 +1,103 @@
+* {
+    font-size: 67.5%; 
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+:root {
+    --background-gray-mk: #F0F4F5;
+    --color-border-input-mk: #C6D5DB;
+    --background-form-white: white;
+    --background-green-button-mk: #63D391;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-gray-mk);
+    display: grid;
+    place-items: center;
+}
+
+main {
+    width: 100%;
+    display: grid;
+    place-items: center;
+    position: relative;
+}
+
+form {
+    background-color: var(--background-form-white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 3px;
+    height: 450px;
+    width: 310px;
+    border-radius: 1rem;
+}
+
+form #form-icon-mk {
+    width: 250px;
+    height: 60px;
+    padding-top: 4px;
+}
+
+form #form-icon-mk img {
+    width: 100%;
+    height: 100%;
+}
+
+form #form-inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 120px;
+    gap: 15px;
+}
+
+/* editando os inputs */
+
+/* aqui botei aquele role do type que te passei no zap */
+form #form-inputs input[type="text"],
+form #form-inputs input[type="password"] {
+    width: 260px;
+    height: 30px;
+    outline: none;
+    border: 1px solid var(--color-border-input-mk);
+    padding-left: 1rem;
+    font-size: 1rem;
+}
+
+form #form-inputs input:focus {
+    border: 2px solid black;
+    border-radius: 3px;
+}
+
+/* mexendo no texto que fica la dentro do input, chama-se placeholder */
+form #form-inputs input::placeholder {
+    font-size: 1rem;
+    color: var(--color-border-input-mk);
+}
+
+form input[type="submit"] {
+    width: 260px;
+    height: 30px;
+    outline: none;
+    padding-left: 1rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border: 1px solid var(--color-border-input-mk);
+    background-color: var(--background-green-button-mk);
+    color: var(--background-form-white);
+}
+
+/* fazendo gambiarra */
+form #formNull {
+    height: 10px;
+}
