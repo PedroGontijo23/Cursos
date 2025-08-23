@@ -19,13 +19,13 @@ body {
     background-color: var(--background-gray-mk);
     display: grid;
     place-items: center;
+    position: relative;
 }
 
 main {
     width: 100%;
     display: grid;
     place-items: center;
-    position: relative;
 }
 
 form {
@@ -100,4 +100,26 @@ form input[type="submit"] {
 /* fazendo gambiarra */
 form #formNull {
     height: 10px;
+}
+
+#float-button {
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+    background-color: var(--background-green-button-mk);
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    display: grid;
+    place-items: center;
+}
+
+#float-button i {
+    color: white;
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+#float-button i:hover {
+    color: var(--color-border-input-mk);
 }
