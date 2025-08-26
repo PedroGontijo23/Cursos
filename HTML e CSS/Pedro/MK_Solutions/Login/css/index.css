@@ -36,11 +36,10 @@ form {
     background-color: white;
     border-radius: 8px;
 }
-
 .logo-mk {
-    width: 220px;
-    height: 60px;
-    padding-top: 10px;
+    width: 280px;
+    height: 100px;
+    padding: 0 5px 35px 5px;
 }
 
 .logo-mk img {
@@ -54,16 +53,27 @@ form {
     flex-direction: column;
     justify-content: center;
     width: 100%;
-    height: 100px;
-    gap: 8px;
+    height: 150px;
+    gap: 20px;
+    border: none;
 }
 
 .inputs input[type="text"],
 .inputs input[type="password"] {
     width: 260px;
     height: 30px;
-    outline: none;
     border-radius: 3px;
-    border-color: var(--bordas-mk);
+    border: 1px solid #bec5ce;
     padding: 2px 0 2px 8px;
+    background-color: transparent;
+}
+
+.inputs input[type="submit"] {
+    background-color: var(--verde-mk);
+    width: 260px;
+    height: 30px;
+    border: none;
+    color: white;
+    display: grid;
+    align-items: center;
 }
