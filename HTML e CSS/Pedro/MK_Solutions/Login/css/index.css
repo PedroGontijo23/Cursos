@@ -28,7 +28,7 @@ main {
 
 form {
     width: 310px;
-    height: 450px;
+    height: 440px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -37,9 +37,9 @@ form {
     border-radius: 8px;
 }
 .logo-mk {
-    width: 280px;
+    width: 290px;
     height: 100px;
-    padding: 0 5px 35px 5px;
+    padding: 0 5px 38px 5px;
 }
 
 .logo-mk img {
@@ -76,4 +76,35 @@ form {
     color: white;
     display: grid;
     align-items: center;
+}
+
+form input[type="submit"] {
+    outline: none;
+    cursor: pointer;
+}
+
+form #formNull {
+    height: 10px;
+}
+
+#float-button {
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+    background-color: var(--background-green-button-mk);
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    display: grid;
+    place-items: center;
+}
+
+#float-button i {
+    color: white;
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+#float-button i:hover {
+    color: var(--color-border-input-mk);
 }
