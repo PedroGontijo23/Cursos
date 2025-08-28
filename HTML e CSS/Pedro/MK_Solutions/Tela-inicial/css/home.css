@@ -30,8 +30,15 @@ header {
     display: flex;
     justify-content: space-between;
     align-self: center;
+    place-items: center;
     padding: 10px 15px;
     background-color: white;
+}
+body {
+    background: var(--background-);
+}
+header img {
+    width: 230px;
 }
 
 .abas-nav li{
@@ -43,4 +50,28 @@ i {
     color: white;
     background-color: var(--cor-letra-nav);
     border-radius: 20px;
+    cursor: pointer;
+}
+
+.usuario button {
+    background: var(--cor-letra-nav);
+    color: white;
+    display: flex;
+    width: 50px;
+    border-radius: 15px;
+}
+
+main {
+    width: 800px;
+    height: 300px;
+    display: grid;
+    justify-content: top;
+    background: white;
+    border-color: var(--bordas-mk);
+    border-radius: 3px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+main img {
+    width: 80px;
+    
 }
