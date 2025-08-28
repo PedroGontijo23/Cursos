@@ -41,25 +41,14 @@ header img {
     width: 230px;
 }
 
-.abas-nav li{
-    display: inline;
-    padding: 0 10px;
-    font-size: 20px;
-}
-i {
-    color: white;
-    background-color: var(--cor-letra-nav);
-    border-radius: 20px;
-    cursor: pointer;
-}
 
-.usuario button {
-    background: var(--cor-letra-nav);
-    color: white;
-    display: flex;
-    width: 50px;
-    border-radius: 15px;
-}
+
+
+
+
+
+
+
 
 main {
     width: 800px;
