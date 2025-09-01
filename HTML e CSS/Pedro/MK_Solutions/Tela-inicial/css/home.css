@@ -50,7 +50,7 @@ header img {
     background: transparent;
     border-radius: 50px;
     cursor: pointer;
-    transition: all 0.08s ease-in-out;
+    transition: all 0.20s ease-in-out;
 }
 
 .menu-abas .botoes:hover {
@@ -88,6 +88,30 @@ header img {
     margin-left: 10px;
     color: #205266;
     font-weight: bold;
+}
+
+.usuario .login {
+    display: inline-block;
+    height: 35px;
+    width: 150px;
+    cursor: pointer;
+}
+
+.usuario .login i {
+    height: 33px;
+    width: 33px;
+    color: white;
+    font-size: 18px;
+    background: var(--cor-letra-nav);
+    border-radius: 50px;
+    line-height: 33px;
+}
+
+.usuario .login span {
+    padding-left: 10px;
+    color: var(--cor-letra-nav);
+    font-weight: bold;
+    font-size: 13px;
 }
 
 main {
