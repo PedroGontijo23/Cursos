@@ -8,22 +8,13 @@
 :root {
     --background-: #F0F4F5;
     --verde-mk: #63D391;
-    --bordas-mk: #bec5ce;
+    --bordas-mk: #bec5ce7c;
     --cor-letra-nav: #205266;
-}
-
-a {
-    text-decoration: none;
-    cursor: pointer;
 }
 
 input {
     outline: none;
     cursor: pointer;
-}
-
-li {
-    list-style: none;
 }
 
 header {
@@ -115,16 +106,43 @@ header img {
 }
 
 main {
-    width: 800px;
-    height: 300px;
     display: grid;
-    justify-content: top;
-    background: white;
-    border-color: var(--bordas-mk);
-    border-radius: 3px;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    place-items: center;
+    padding-top: 55px;
 }
+
+.campo-central {
+    display: block;
+
+    background-color: white;
+    border-radius: 4px;
+    border: solid 1px var(--bordas-mk);
+    position: fixed in !important;
+    height: 55%;
+    min-height: 1048px;
+}
+
 main img {
     width: 80px;
-    
+}    
+
+.campo-central .bem-vindo {
+    display: grid;
+    justify-content: top;
+    margin: 25px 40px
 }
+
+.campo-central .bem-vindo input {
+    font-size: 20px;
+    width: 680px;
+    border-color: solid 1px rgba(209, 207, 207, 0.103);
+}
+
+
+
+
+
+
+
+
+
