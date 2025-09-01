@@ -31,7 +31,7 @@ header {
     justify-content: space-between;
     align-self: center;
     place-items: center;
-    padding: 10px 15px;
+    padding: 8px 15px;
     background-color: white;
 }
 body {
@@ -41,14 +41,54 @@ header img {
     width: 230px;
 }
 
+.menu-abas .botoes {
+    display: inline-block;
+    height: 35px;
+    width: 50px;
+    margin: 0 5px;
+    overflow: hidden;
+    background: transparent;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.08s ease-in-out;
+}
 
+.menu-abas .botoes:hover {
+    width: auto;
+}
 
+.menu-abas .botoes .icone {
+    display: inline-block;
+    height: 35px;
+    width: 35px;
+    text-align: center;
+    border-radius: 50px;
+    box-sizing: border-box;
+    line-height: 20px;
+}
 
+.menu-abas .botoes:nth-child(odd) .icone {
+    background: #205266;
+}
 
+.menu-abas .botoes:nth-child(even) .icone {
+    background: #205266;
+}
 
+.menu-abas .botoes .icone i {
+    font-size: 20px;
+    line-height: 35px;
+    color: white;
+}
 
-
-
+.menu-abas .botoes span {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 20px;
+    margin-left: 10px;
+    color: #205266;
+    font-weight: bold;
+}
 
 main {
     width: 800px;
