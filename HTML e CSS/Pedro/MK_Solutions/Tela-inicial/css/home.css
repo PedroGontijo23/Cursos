@@ -22,17 +22,19 @@ header {
     justify-content: space-between;
     align-self: center;
     place-items: center;
-    padding: 8px 15px;
+    padding: 3px 15px;
     background-color: white;
 }
 body {
     background: var(--background-);
 }
 header img {
-    width: 230px;
+    width: 150px;
 }
 
 .menu-abas .botoes {
+    position: relative;
+    right: 125px;
     display: inline-block;
     height: 35px;
     width: 50px;
@@ -41,7 +43,7 @@ header img {
     background: transparent;
     border-radius: 50px;
     cursor: pointer;
-    transition: all 0.20s ease-in-out;
+    transition: all 2s ease;
 }
 
 .menu-abas .botoes:hover {
@@ -123,8 +125,9 @@ main {
 }
 
 main img {
-    width: 80px;
-    position: relative;
+    width: 130px;
+    border: 5px solid var(--verde-mk);
+    border-radius: 100px;
 }    
 
 .campo-central .bem-vindo {
@@ -139,9 +142,43 @@ main img {
     border-color: solid 1px rgba(209, 207, 207, 0.103);
 }
 
+main .perfil {
+    position: relative;
+    right: 130px;
+    bottom: 90px;
+}
 
+main .inicial {
+    position: relative;
+    bottom: 100px;
+    color: var(--cor-letra-nav)
+}
 
+main .duvidas  {
+    position: relative;
+    bottom: 100px;
+}
 
+main .duvidas input {
+    border-radius: 4px;
+    border: 0.5px solid #bec5ce;
+    height: 30px;
+}
+
+main .duvidas i:hover {
+    cursor: pointer;
+}
+
+main .duvidas i {
+    padding-left: 0px;
+    height: 60px;
+    width: 60px;
+    color: white;
+    font-size: 30px;
+    background: var(--cor-letra-nav);
+    border-radius: 50px;
+    line-height: 60px;
+}
 
 
 
