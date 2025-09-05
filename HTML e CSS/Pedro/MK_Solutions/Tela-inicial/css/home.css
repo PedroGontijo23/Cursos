@@ -43,7 +43,7 @@ header img {
     background: transparent;
     border-radius: 50px;
     cursor: pointer;
-    transition: all 2s ease;
+    transition: all 5s ease;
 }
 
 .menu-abas .botoes:hover {
@@ -74,7 +74,7 @@ header img {
     color: white;
 }
 
-.menu-abas .botoes span {
+.menu-abas .botoes a {
     font-size: 18px;
     font-weight: 500;
     line-height: 20px;
@@ -100,7 +100,7 @@ header img {
     line-height: 33px;
 }
 
-.usuario .login span {
+.usuario .login a {
     padding-left: 40px;
     color: var(--cor-letra-nav);
     font-weight: bold;
