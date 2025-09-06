@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    background: url(../img/capa-fundo.jpg);
+    background-size:cover;
+    background-position: center;
+}
+
+.coluna-left {
+    margin-top: 25px;
+    margin-left: 80px;
+}
+
+.coluna-left span {
+    color: white;
+}
+.coluna-left img {
+    width: 10%;
+    height: 10%;
+}
+
+.coluna-perfil {
+    display: inline-block;
+}
+.coluna-perfil img {
+    width: 100px;
+    padding: 5px 0;
+    border-radius: 10px;
+}
+
+.coluna-perfil i {
+
+    color: white;
+}
