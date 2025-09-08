@@ -15,27 +15,46 @@ body {
 
 .coluna-left {
     margin-top: 25px;
-    margin-left: 80px;
+    margin-left: 110px;
 }
+.coluna-left .logo {
+    display: grid;
+    align-items: center;
 
-.coluna-left span {
-    color: white;
 }
 .coluna-left img {
-    width: 10%;
-    height: 10%;
+    width: 240px;
+    height: 100px;
+}
+.coluna-left a {
+    color: white;
+    margin-left: 50px;
+    margin-top: -10px;
+    font-size: 1.2rem;
 }
 
 .coluna-perfil {
     display: inline-block;
+    margin-left: 43px;
 }
 .coluna-perfil img {
     width: 100px;
     padding: 5px 0;
     border-radius: 10px;
+    object-fit: cover;
+    
+}
+.foto {
+    transition: .35s;
+    cursor: pointer;
+}
+.coluna-perfil:hover > :not(:hover) {
+    opacity: 0.4;
+    transform: scale(0.9);
+    
 }
 
 .coluna-perfil i {
-
+    
     color: white;
 }
