@@ -1,8 +1,12 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box
+    box-sizing: border-box;
+    font-family: "PT Serif", serif;
+    font-weight:400;
+    font-style:normal;
 }
+
 
 body {
     width: 100vw;
@@ -17,15 +21,17 @@ body {
     margin-top: 25px;
     margin-left: 110px;
 }
+
 .coluna-left .logo {
     display: grid;
     align-items: center;
-
 }
+
 .coluna-left img {
     width: 240px;
     height: 100px;
 }
+
 .coluna-left a {
     color: white;
     margin-left: 50px;
@@ -36,25 +42,38 @@ body {
 .coluna-perfil {
     display: inline-block;
     margin-left: 43px;
+    text-align: center;
 }
+
 .coluna-perfil img {
     width: 100px;
     padding: 5px 0;
     border-radius: 10px;
     object-fit: cover;
-    
+    display: inline-block;
+    overflow: hidden;
 }
+
 .foto {
-    transition: .35s;
+    transition: .55s;
     cursor: pointer;
 }
+
 .coluna-perfil:hover > :not(:hover) {
     opacity: 0.4;
     transform: scale(0.9);
-    
+    width: auto;
 }
 
 .coluna-perfil i {
-    
+    position: relative;
+    bottom: 2.6rem;
+    right: 1rem;
     color: white;
+}
+
+.coluna-perfil a {
+    position: relative;
+    bottom: 2.6rem;
+    right: 1rem;
 }
