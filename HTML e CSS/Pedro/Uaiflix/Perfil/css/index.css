@@ -27,6 +27,10 @@ body {
     align-items: center;
 }
 
+.coluna-left .logo img{
+    margin-left: 11px;
+}
+
 .coluna-left img {
     width: 240px;
     height: 100px;
