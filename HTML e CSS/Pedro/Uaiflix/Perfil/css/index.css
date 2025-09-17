@@ -34,7 +34,7 @@ body {
 
 .coluna-left a {
     color: white;
-    margin-left: 50px;
+    margin-left: 60px;
     margin-top: -10px;
     font-size: 1.2rem;
 }
@@ -42,7 +42,7 @@ body {
 .coluna-perfil {
     padding-top: 10px;
     display: inline-block;
-    margin-left: 60px;
+    margin-left: 30px;
     text-align: center;
 }
 
@@ -50,20 +50,7 @@ body {
     width: 100px;
     border-radius: 10px;
     object-fit: cover;
-    display: inline-block;
     overflow: hidden;
-}
-
-.foto {
-    transition: .55s;
-    cursor: pointer;
-}
-
-.coluna-perfil:hover > :not(:hover) {
-    opacity: 0.4;
-    transform: scale(0.9);
-    width: auto;
-
 }
 
 .coluna-perfil i{
@@ -72,16 +59,34 @@ body {
 
 .coluna-perfil .foto {
     position: relative;
+    left: 50px;
     display: flex;
     height: 120px;
-    width: 120px;
-    overflow: hiddeng;
+    width: 100px;
+    overflow: hidden;
     background: transparent;
     cursor: pointer;
     transition: all 2s ease;
+    cursor: pointer;
+    background: green;
 }
 
+.coluna-perfil .foto:hover{
+    width: auto;
+    background: yellow;
 
+}
+
+.coluna-perfil .foto:hover a{
+    position: relative;
+    right: 100px;
+}
+
+.coluna-perfil .foto:hover i{
+    position: relative;
+    right: 20px;
+
+}
 .coluna-perfil .foto .icone {
     display: flex;
     height: 100px;
@@ -94,7 +99,22 @@ body {
 
 .coluna-perfil .foto i{
     position: relative;
-    top: 40px;
-    right: 130px;
+    top: 45px;
 }
+
+.foto a{
+    position: relative;
+    top: 40px;
+    right: 50px;
+    font-size: 2rem;
+}
+
+
+
+
+
+
+
+
+
 
