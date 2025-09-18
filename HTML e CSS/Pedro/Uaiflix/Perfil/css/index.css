@@ -9,25 +9,16 @@
 body {
     width: 100vw;
     height: 100vh;
+    font-family: 'Roboto', sans-serif;
     display: grid;
     background: url(../img/capa-fundo.jpg);
     background-size:cover;
     background-position: center;
-    font-family: 'Roboto', sans-serif;
 }
 
 .coluna-left {
     margin-top: 25px;
     margin-left: 110px;
-}
-
-.coluna-left .logo {
-    display: grid;
-    align-items: center;
-}
-
-.coluna-left .logo img{
-    margin-left: 11px;
 }
 
 .coluna-left img {
@@ -40,6 +31,15 @@ body {
     margin-left: 60px;
     margin-top: -10px;
     font-size: 1.2rem;
+}
+
+.coluna-left .logo {
+    display: grid;
+    align-items: center;
+}
+
+.coluna-left .logo img{
+    margin-left: 11px;
 }
 
 .coluna-perfil {
@@ -59,50 +59,41 @@ body {
     overflow: hidden;
 }
 
-.coluna-perfil i{
-    color: white;
-}
-
 .coluna-perfil .foto {
+    cursor: pointer;
     position: relative;
     height: 120px;
     width: 150px;
+    display: flex;
     overflow: hidden;
     background: transparent;
-    cursor: pointer;
-    transition: all 1.5s ease;
-    cursor: pointer;
-    display: flex;
     padding: 20px 0;
+    transition: .75s ease-in-out;
+}
+
+.coluna-perfil .foto a{
+    position: relative;
+    top: 40px;
+    right: 50px;
+    font-size: 2rem;
+}
+
+.coluna-perfil .foto i{
+    position: relative;
+    top: 30px;
+    background: rgb(20, 20, 20);
+    height: 35px;
+    width: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
 }
 
 .coluna-perfil .foto img{
     margin-left: 50px;
 }
 
-.coluna-perfil .foto:hover{
-    width: auto;
-}
-
-.coluna-perfil .foto:hover a{
-    position: relative;
-    right: 50px;
-}
-
-.foto {
-    transition: .35s;
-    cursor: pointer;
-}
-.coluna-perfil:hover > :not(:hover){
-    opacity: 0.4;
-    transform: scale(0.9);
-}
-
-.coluna-perfil .foto:hover i{
-    position: relative;
-    right: 170px;
-
-}
 .coluna-perfil .foto .icone {
     display: flex;
     height: 100px;
@@ -113,17 +104,27 @@ body {
     line-height: 20px;
 }
 
-.coluna-perfil .foto i{
-    position: relative;
-    top: 45px;
+.coluna-perfil .foto:hover{
+    width: auto;
 }
 
-.foto a{
+.coluna-perfil .foto:hover a{
     position: relative;
-    top: 40px;
-    right: 50px;
-    font-size: 2rem;
+    right: 60px;
 }
+
+.coluna-perfil .foto:hover i{
+    position: relative;
+    right: 180px;
+    color: white;
+}
+
+.coluna-perfil:hover > :not(:hover){
+    opacity: 0.4;
+    transform: scale(0.9);
+}
+
+
 
 
 
